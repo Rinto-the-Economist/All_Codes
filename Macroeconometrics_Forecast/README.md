@@ -1,1 +1,3 @@
-
+This folder contains the Julia code to my answer to Problem Set 1 of the Macroeconomtrics course, as described in assignment_1.pdf. The assignment consists of fitting a VAR model on Japanese quarterly inflation, policy rate and gdp data to forecast Japanese growth for the period 2023Q4-2024Q1. The files are:
+- Assignment1.ipynb: a Jupyter notebook containing the main code, results and interpretation. The file downloads and cleans the time series, conducts a series of tests to find the correct specification of the VAR(p,q) model, fits the model and runs a two-quarter-ahead forecast with a confidence interval.
+- marketdata_functions.jl: a file containing all auxiliary functions related to data formatting
