@@ -1,0 +1,96 @@
+Starting preprocessing of the model file ...
+Found 13 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+warning: Some of the parameters have no value (lambda) when using stoch_simul. If these parameters are not initialized in a steadystate file or a steady_state_model-block, Dynare may not be able to solve the model...
+warning: matrix singular to machine precision
+warning: called from
+    dyn_first_order_solver at line 278 column 10
+    stochastic_solvers at line 262 column 19
+    resol at line 103 column 15
+    stoch_simul at line 92 column 30
+    driver at line 263 column 23
+    dynare at line 301 column 1
+warning: matrix singular to machine precision
+warning: called from
+    dyn_first_order_solver at line 292 column 9
+    stochastic_solvers at line 262 column 19
+    resol at line 103 column 15
+    stoch_simul at line 92 column 30
+    driver at line 263 column 23
+    dynare at line 301 column 1
+
+MODEL SUMMARY
+
+  Number of variables:         13
+  Number of stochastic shocks: 4
+  Number of state variables:   5
+  Number of jumpers:           2
+  Number of static variables:  6
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables        err_r      err_u      err_z  err_istar
+err_r         1.000000   0.000000   0.000000   0.000000
+err_u         0.000000   1.000000   0.000000   0.000000
+err_z         0.000000   0.000000   1.000000   0.000000
+err_istar     0.000000   0.000000   0.000000   1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                 pih               x              pi             tau               i         delta_e
+tau(-1)                     0.436891        0.563109        0.262135        0.563109               0               0
+istar(-1)                   0.719209       -0.719209        0.431525       -0.719209        0.450000               0
+r(-1)                      -0.719209        0.719209       -0.431525        0.719209        0.450000               0
+u(-1)                       1.017115       -1.017115        0.610269       -1.017115               0               0
+z(-1)                       0.421130        0.478870        0.252678       -0.421130       -0.045000               0
+err_r                      -0.193751        0.413312       -0.116251        0.193751        0.399202               0
+err_u                       1.130128       -1.130128        0.678077       -1.130128               0               0
+err_z                       0.407386        0.570658        0.244431       -0.407386       -0.039920               0
+err_istar                   0.193751       -0.413312        0.116251       -0.193751        0.600798               0
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+pih            0.0000     1.5443     2.3850
+x              0.0000     6.3440    40.2464
+pi             0.0000     0.9266     0.8586
+tau            0.0000     6.6009    43.5720
+i              0.0000     1.6322     2.6641
+delta_e        0.0000     0.0000     0.0000
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+               err_r      err_u      err_z  err_istar
+pih             8.39      73.12      10.10       8.39
+x              12.08      74.72       1.12      12.08
+pi              8.39      73.12      10.10       8.39
+tau            10.46      69.02      10.07      10.46
+i              45.83       0.00       0.46      53.71
+delta_e         4.48      52.70      29.64      13.17
+
+
+
+MATRIX OF CORRELATIONS
+Variables       pih       x      pi     tau       i
+pih          1.0000 -0.0855  1.0000 -0.1170  0.0082
+x           -0.0855  1.0000 -0.0855  0.9375 -0.0114
+pi           1.0000 -0.0855  1.0000 -0.1170  0.0082
+tau         -0.1170  0.9375 -0.1170  1.0000  0.0165
+i            0.0082 -0.0114  0.0082  0.0165  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order          1       2       3       4       5
+pih       0.5297  0.2235  0.0585 -0.0277 -0.0701
+x         0.9668  0.9097  0.8410  0.7694  0.6996
+pi        0.5297  0.2235  0.0585 -0.0277 -0.0701
+tau       0.9726  0.9163  0.8477  0.7759  0.7056
+i         0.8933  0.8040  0.7236  0.6512  0.5861
+Total computing time : 0h00m02s
+Note: warning(s) encountered in MATLAB/Octave code

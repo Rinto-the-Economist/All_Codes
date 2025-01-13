@@ -1,0 +1,81 @@
+Starting preprocessing of the model file ...
+Found 10 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+MODEL SUMMARY
+
+  Number of variables:         10
+  Number of stochastic shocks: 4
+  Number of state variables:   7
+  Number of jumpers:           2
+  Number of static variables:  2
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables        err_u      err_r      err_z  err_istar
+err_u         1.000000   0.000000   0.000000   0.000000
+err_r         0.000000   1.000000   0.000000   0.000000
+err_z         0.000000   0.000000   1.000000   0.000000
+err_istar     0.000000   0.000000   0.000000   1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                   x             pih              pi             tau               i         delta_e
+z(-1)                              0               0       -0.360000       -0.900000               0               0
+i(-1)                              0               0               0               0               0        1.000000
+istar(-1)                          0               0               0               0               0       -1.000000
+r(-1)                              0               0               0               0        0.900000               0
+tau(-1)                            0               0       -0.400000               0               0               0
+u(-1)                      -1.863549        0.310592       -0.434828       -1.863549       -0.254597               0
+x(-1)                       0.263943        0.122676        0.228253        0.263943       -0.161898               0
+err_u                      -2.070610        0.345102       -0.483142       -2.070610       -0.282885               0
+err_r                              0               0               0               0        1.000000               0
+err_z                              0               0       -0.400000       -1.000000               0               0
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+x              0.0000     6.2745    39.3690
+pih            0.0000     0.3607     0.1301
+pi             0.0000     0.6507     0.4234
+tau            0.0000     6.6807    44.6322
+i              0.0000     2.3533     5.5379
+delta_e        0.0000     3.2865    10.8011
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+               err_u      err_r      err_z  err_istar
+x             100.00       0.00       0.00       0.00
+pih           100.00       0.00       0.00       0.00
+pi             60.22       0.00      39.78       0.00
+tau            88.21       0.00      11.79       0.00
+i               4.96      95.04       0.00       0.00
+delta_e         2.54      48.73       0.00      48.73
+
+
+
+MATRIX OF CORRELATIONS
+Variables          x      pih       pi      tau        i  delta_e
+x             1.0000  -0.1724   0.1338   0.9392  -0.1322  -0.0786
+pih          -0.1724   1.0000  -0.7760  -0.1620  -0.1538  -0.0464
+pi            0.1338  -0.7760   1.0000   0.1741   0.1194   0.0360
+tau           0.9392  -0.1620   0.1741   1.0000  -0.1241  -0.0739
+i            -0.1322  -0.1538   0.1194  -0.1241   1.0000   0.6338
+delta_e      -0.0786  -0.0464   0.0360  -0.0739   0.6338   1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order           1       2       3       4       5
+x          0.9405  0.8572  0.7743  0.6976  0.6280
+pih        0.2007 -0.0039 -0.0522 -0.0599 -0.0573
+pi         0.1010 -0.0202 -0.0476 -0.0505 -0.0475
+tau        0.9357  0.8516  0.7689  0.6927  0.6236
+i          0.8851  0.7926  0.7123  0.6408  0.5767
+delta_e    0.8924  0.8011  0.7205  0.6483  0.5834
+Total computing time : 0h00m02s
