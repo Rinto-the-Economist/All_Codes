@@ -1,1 +1,4 @@
-
+This folder contains the Julia codes to my answers to Problem Set 3 of the Macroeconometrics course. The model consists of a piece-wise linear SVAR that seeks to estimate the fiscal multiplier in periods of growth and recessions for the US. In particular, it identifies two different regimes based on GDP growth to identify all parameters. The files contained in this folder are:
+- assignment_3.ipynb: a Jupyter notebook that contains all codes, results and interpretations. In particular, the file tests whether the model is linear with likelihood ratio and estimates the fiscal multiplier using the identification strategy described above.
+- marketdata_functions.jl: contains all functions related to data formatting for time series
+- notes.pdf: contains proofs and derivations
