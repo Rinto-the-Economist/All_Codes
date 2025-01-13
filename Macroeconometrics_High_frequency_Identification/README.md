@@ -1,1 +1,4 @@
-
+This folder contains the Julia codes to my answers to Problem Set 2 of the Macroeconometrics course, as described in assignment_2.pdf. The model consists of a SVAR fittied onto the Gertler and Karadi (2005) data to identify the effects of monetary policy shocks on inflation, interest rate, industrial production and bond premium. In particular, the model uses Cholesky decomposition to identify the parameters. It also uses a high-frequency series of the surprise change in the 3-month Federal Funds futures rate around FOMC announcements as an external instrument to identify the monetary policy shock and produce IRFs. The files are as follows:
+- Assignment2.ipynb: a Jupyter notebook containing all main codes, results and interpretation
+- VAR_data.csv: quarterly series on US cpi inflation, industrial production, federal fund rate and one- and two-year treasury yields
+- factor_data.csv: the Gertler and Karadi (2005) series on monetary policy surprises
