@@ -1,0 +1,87 @@
+Starting preprocessing of the model file ...
+Found 19 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+c_aho  		 0.759103
+c_aro  		 0.605553
+c_bo   		 0.363737
+c_aht  		 0.293287
+c_art  		 0.233961
+c_bt   		 0.140533
+l_h    		 0.113592
+l_r    		 0.292893
+l      		 0.257033
+y_t    		 0.38636
+y_o    		 1
+p_t    		 43.1102
+w      		 22.6805
+pi     		 10.8264
+n_a    		 -677.77
+n_b    		 542.216
+r_star 		 1.0101
+pi_r   		 10.8264
+pi_h   		 10.8264
+
+MODEL SUMMARY
+
+  Number of variables:         19
+  Number of stochastic shocks: 1
+  Number of state variables:   3
+  Number of jumpers:           4
+  Number of static variables:  12
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables      err_yo
+err_yo       0.010000
+
+POLICY AND TRANSITION FUNCTIONS
+                               c_aho           c_aro            c_bo           c_aht           c_art            c_bt             l_h             l_r               l             y_t             y_o             p_t               w              pi             n_a             n_b          r_star
+Constant                    0.759103        0.605553        0.363737        0.293287        0.233961        0.140533        0.113592        0.292893        0.257033        0.386360        1.000000       43.110230       22.680461       10.826437     -677.770404      542.216323        1.010101
+y_o(-1)                     1.399157        1.742464       -0.773803        0.034976        0.269888       -0.541234        0.337109       -0.462444       -0.302534       -0.318328        0.900000      185.796109      105.756692       37.739606      144.778958     -115.823166       -0.213691
+n_a(-1)                    -0.034896       -0.022634        0.025086        0.002259        0.003813        0.017235        0.008273        0.000522        0.002072        0.020738               0       -5.784795       -2.553585       -1.531655      -30.763049       24.610440        0.045763
+n_b(-1)                    -0.044214       -0.029329        0.032306        0.002813        0.004539        0.022015        0.010037        0.001070        0.002863        0.026209               0       -7.311022       -3.241303       -1.926627      -39.703812       31.763049        0.057203
+err_yo                     -1.554619       -1.936072        0.859781       -0.038863       -0.299876        0.601371       -0.374565        0.513827        0.336148        0.353698       -1.000000     -206.440122     -117.507436      -41.932896     -160.865509      128.692407        0.237434
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+c_aho             NaN        NaN        NaN
+c_aro             NaN        NaN        NaN
+c_bo              NaN        NaN        NaN
+c_aht             NaN        NaN        NaN
+c_art             NaN        NaN        NaN
+c_bt              NaN        NaN        NaN
+l_h               NaN        NaN        NaN
+l_r               NaN        NaN        NaN
+l                 NaN        NaN        NaN
+y_t               NaN        NaN        NaN
+y_o            1.0000     0.2294     0.0526
+p_t               NaN        NaN        NaN
+w                 NaN        NaN        NaN
+pi                NaN        NaN        NaN
+n_a               NaN        NaN        NaN
+n_b               NaN        NaN        NaN
+r_star         1.0101     0.0545     0.0030
+
+
+
+MATRIX OF CORRELATIONS
+Variables       y_o  r_star
+y_o          1.0000 -1.0000
+r_star      -1.0000  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order          1       2       3       4       5
+y_o       0.9000  0.8100  0.7290  0.6561  0.5905
+r_star    0.9000  0.8100  0.7290  0.6561  0.5905
+Total computing time : 0h00m02s

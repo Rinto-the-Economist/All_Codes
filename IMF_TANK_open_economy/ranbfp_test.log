@@ -1,0 +1,110 @@
+Starting preprocessing of the model file ...
+Found 13 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+c_ao   		 1.16703
+c_bo   		 4.83297
+c_at   		 0.167769
+c_bt   		 0.694776
+l      		 0.809581
+y_t    		 0.862546
+y_o    		 6
+p_t    		 228.134
+w      		 25.5212
+pi     		 176.115
+n_a    		 -15733.5
+n_b    		 15733.5
+r_star 		 1.0101
+warning: matrix singular to machine precision, rcond = 1.15552e-25
+warning: called from
+    stochastic_solvers at line 229 column 22
+    resol at line 103 column 15
+    stoch_simul at line 92 column 30
+    driver at line 254 column 23
+    dynare at line 301 column 1
+warning: matrix singular to machine precision, rcond = 1.15552e-25
+warning: called from
+    stochastic_solvers at line 231 column 20
+    resol at line 103 column 15
+    stoch_simul at line 92 column 30
+    driver at line 254 column 23
+    dynare at line 301 column 1
+
+MODEL SUMMARY
+
+  Number of variables:         13
+  Number of stochastic shocks: 1
+  Number of state variables:   8
+  Number of jumpers:           0
+  Number of static variables:  5
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables      err_yo
+err_yo       1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                c_ao            c_bo            c_at            c_bt               l             y_t             y_o             p_t               w              pi
+Constant                    1.167027        4.832973        0.167769        0.694776        0.809581        0.862546        6.000000      228.134257       25.521241      176.114691
+c_ao(-1)                    1.253664       -1.252522       -0.063748        0.193419        0.173873        0.129885        0.000575      554.531563       60.396068      454.558850
+c_bo(-1)                    0.336492       -0.335783       -0.084559        0.260343        0.235701        0.175916        0.000357      302.268644       31.588830      269.234005
+c_at(-1)                    4.989010       -4.984465       -0.253687        0.769720        0.691935        0.516882        0.002289     2206.782593      240.348792     1808.936811
+c_bt(-1)                    1.339084       -1.336263       -0.336506        1.036046        0.937985        0.700066        0.001421     1202.891843      125.709189     1071.428992
+y_o(-1)                    -0.287485        1.186772        0.072244       -0.222518       -0.201497       -0.150407        0.899641     -258.397580      -27.004498     -230.157913
+n_a(-1)                    -0.007225        0.007214        0.001816       -0.000630       -0.004288        0.001183       -0.000006       -6.484698       -0.574695       -5.748231
+n_b(-1)                    -0.007225        0.007214        0.001816       -0.000630       -0.004288        0.001183       -0.000006       -6.484698       -0.574695       -5.748231
+r_star(-1)                  1.803043       -1.800265       -0.281936        0.866093        0.783274        0.584675        0.001399     1230.315243      130.239958     1069.040561
+err_yo                      0.319428       -1.318636       -0.080271        0.247243        0.223885        0.167119       -0.999601      287.108422       30.004998      255.731014
+
+
+THEORETICAL MOMENTS
+VARIABLE           MEAN    STD. DEV.     VARIANCE
+c_ao             1.1670       0.8898       0.7918
+c_bo             4.8330       2.5974       6.7464
+c_at             0.1678       0.1416       0.0200
+c_bt             0.6948       0.4375       0.1914
+l                0.8096       0.3968       0.1575
+y_t              0.8625       0.2961       0.0877
+y_o              6.0000       2.2927       5.2567
+p_t            228.1343     434.7130  188975.3682
+w               25.5212      45.9372    2110.2240
+pi             176.1147     382.3476  146189.7206
+
+
+
+MATRIX OF CORRELATIONS
+Variables      c_ao    c_bo    c_at    c_bt       l     y_t     y_o     p_t       w      pi
+c_ao         1.0000 -0.4938 -0.0037 -0.0020 -0.0047 -0.0043 -0.1715  0.6716  0.7114  0.5887
+c_bo        -0.4938  1.0000  0.1783 -0.1760 -0.1748 -0.1751  0.9414 -0.4631 -0.4761 -0.4341
+c_at        -0.0037  0.1783  1.0000 -1.0000 -1.0000 -1.0000  0.2008 -0.7434 -0.7054 -0.8105
+c_bt        -0.0020 -0.1760 -1.0000  1.0000  1.0000  1.0000 -0.2003  0.7396  0.7014  0.8072
+l           -0.0047 -0.1748 -1.0000  1.0000  1.0000  1.0000 -0.2001  0.7378  0.6994  0.8056
+y_t         -0.0043 -0.1751 -1.0000  1.0000  1.0000  1.0000 -0.2003  0.7380  0.6997  0.8058
+y_o         -0.1715  0.9414  0.2008 -0.2003 -0.2001 -0.2003  1.0000 -0.2643 -0.2635 -0.2636
+p_t          0.6716 -0.4631 -0.7434  0.7396  0.7378  0.7380 -0.2643  1.0000  0.9985  0.9943
+w            0.7114 -0.4761 -0.7054  0.7014  0.6994  0.6997 -0.2635  0.9985  1.0000  0.9869
+pi           0.5887 -0.4341 -0.8105  0.8072  0.8056  0.8058 -0.2636  0.9943  0.9869  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order          1       2       3       4       5
+c_ao      0.9179  0.8564  0.8105  0.7765  0.7516
+c_bo      0.8605  0.7454  0.6499  0.5702  0.5031
+c_at      0.7879  0.6293  0.5115  0.4245  0.3608
+c_bt      0.7893  0.6318  0.5148  0.4283  0.3651
+l         0.7900  0.6330  0.5163  0.4302  0.3672
+y_t       0.7899  0.6328  0.5161  0.4299  0.3669
+y_o       0.9000  0.8100  0.7290  0.6562  0.5906
+p_t       0.7160  0.5038  0.3461  0.2298  0.1448
+w         0.7225  0.5151  0.3610  0.2473  0.1642
+pi        0.7082  0.4902  0.3282  0.2087  0.1214
+Total computing time : 0h00m01s
+Note: warning(s) encountered in MATLAB/Octave code

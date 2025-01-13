@@ -1,0 +1,50 @@
+Starting preprocessing of the model file ...
+Found 15 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 2).
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : -12.25 : 1
+Equation number 2 : -12.7125 : 2
+Equation number 3 : -0.026855 : 3
+Equation number 4 : -0.02664 : 4
+Equation number 5 : 13.0457 : 5
+Equation number 6 : 58.1786 : 6
+Equation number 7 : -1.7241 : 7
+Equation number 8 : -0.68365 : 8
+Equation number 9 : 482.1098 : 9
+Equation number 10 : 18.8222 : 10
+Equation number 11 : 4.4091 : 11
+Equation number 12 : 0 : 12
+Equation number 13 : 0 : 13
+Equation number 14 : 1.9326 : 14
+Equation number 15 : 0 : 15
+
+
+error: called from
+    print_info at line 32 column 1
+    steady at line 102 column 5
+    driver at line 255 column 1
+    dynare at line 301 column 1
+error: Impossible to find the steady state (the sum of square residuals of the static equations is 236677.3472). Either the model doesn't have a steady state, there are an infinity of steady states, or the guess values are too far from the solution
+>> dynare rafafp
+Using 64-bit preprocessor
+Starting Dynare (version 4.6.0).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 21 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 2).
+Processing outputs ...
+done
+Preprocessing completed.
+

@@ -1,0 +1,116 @@
+Starting preprocessing of the model file ...
+Found 19 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+c_aho  		 0.840408
+c_aro  		 0.533065
+c_bo   		 0.374732
+c_aht  		 0.232811
+c_art  		 0.175206
+c_bt   		 0.116469
+l_h    		 0.0118087
+l_r    		 0.261737
+l      		 0.186759
+y_t    		 0.308956
+y_o    		 1
+p_t    		 74.2743
+w      		 27.5234
+pi     		 17.8072
+n_a    		 -1146.48
+n_b    		 802.537
+r_star 		 1.0101
+pi_r   		 17.8072
+pi_h   		 17.8072
+
+MODEL SUMMARY
+
+  Number of variables:         19
+  Number of stochastic shocks: 1
+  Number of state variables:   3
+  Number of jumpers:           4
+  Number of static variables:  12
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables      err_yo
+err_yo       0.010000
+
+POLICY AND TRANSITION FUNCTIONS
+                               c_aho           c_aro            c_bo           c_aht           c_art            c_bt             l_h             l_r               l             y_t             y_o             p_t               w              pi             n_a             n_b          r_star
+Constant                    0.840408        0.533065        0.374732        0.232811        0.175206        0.116469        0.011809        0.261737        0.186759        0.308956        1.000000       74.274257       27.523399       17.807242    -1146.481013      802.536709        1.010101
+y_o(-1)                     1.808434        2.056877       -1.082344       -0.003111        0.296688       -0.588579        0.685365       -0.764769       -0.329729       -0.381830        0.900000      402.049503      163.563294       74.383816      247.152074     -173.006452       -0.216318
+n_a(-1)                    -0.029092       -0.019288        0.022229        0.002088        0.001297        0.011985        0.003026        0.003755        0.003536        0.013520               0       -8.093339       -2.584540       -1.810962      -35.000286       24.500200        0.030798
+n_b(-1)                    -0.042151       -0.028470        0.032574        0.002994        0.001683        0.017463        0.003918        0.005817        0.005247        0.019540               0      -11.700842       -3.752299       -2.607389      -51.428981       36.000286        0.043998
+err_yo                     -2.009371       -2.285419        1.202604        0.003456       -0.329653        0.653976       -0.761516        0.849743        0.366365        0.424256       -1.000000     -446.721670     -181.736993      -82.648684     -274.613415      192.229391        0.240354
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+c_aho             NaN        NaN        NaN
+c_aro             NaN        NaN        NaN
+c_bo              NaN        NaN        NaN
+c_aht             NaN        NaN        NaN
+c_art             NaN        NaN        NaN
+c_bt              NaN        NaN        NaN
+l_h               NaN        NaN        NaN
+l_r               NaN        NaN        NaN
+l                 NaN        NaN        NaN
+y_t               NaN        NaN        NaN
+y_o            1.0000     0.2294     0.0526
+p_t               NaN        NaN        NaN
+w                 NaN        NaN        NaN
+pi                NaN        NaN        NaN
+n_a               NaN        NaN        NaN
+n_b               NaN        NaN        NaN
+r_star         1.0101     0.0551     0.0030
+
+
+
+MATRIX OF CORRELATIONS
+Variables       y_o  r_star
+y_o          1.0000 -1.0000
+r_star      -1.0000  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order          1       2       3       4       5
+y_o       0.9000  0.8100  0.7290  0.6561  0.5905
+r_star    0.9000  0.8100  0.7290  0.6561  0.5905
+MODEL_DIAGNOSTICS:  The Jacobian of the static model is singular
+MODEL_DIAGNOSTICS:  there is 1 colinear relationships between the variables and the equations
+Colinear variables:
+c_aho
+c_aro
+c_bo
+c_aht
+c_art
+c_bt
+l_h
+l_r
+l
+y_t
+p_t
+w
+pi
+n_a
+n_b
+pi_r
+pi_h
+Colinear equations
+   4   5
+MODEL_DIAGNOSTICS:  The singularity seems to be (partly) caused by the presence of a unit root
+MODEL_DIAGNOSTICS:  as the absolute value of one eigenvalue is in the range of +-1e-6 to 1.
+MODEL_DIAGNOSTICS:  If the model is actually supposed to feature unit root behavior, such a warning is expected,
+MODEL_DIAGNOSTICS:  but you should nevertheless check whether there is an additional singularity problem.
+MODEL_DIAGNOSTICS:  The presence of a singularity problem typically indicates that there is one
+MODEL_DIAGNOSTICS:  redundant equation entered in the model block, while another non-redundant equation
+MODEL_DIAGNOSTICS:  is missing. The problem often derives from Walras Law.
+Total computing time : 0h00m02s

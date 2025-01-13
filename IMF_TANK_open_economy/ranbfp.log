@@ -1,0 +1,187 @@
+Starting preprocessing of the model file ...
+Found 13 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+warning: matrix singular to machine precision, rcond = 2.51654e-21
+warning: called from
+    trust_region>dogleg at line 198 column 3
+    trust_region at line 115 column 7
+    dynare_solve at line 253 column 17
+    evaluate_steady_state at line 221 column 20
+    steady_ at line 55 column 28
+    steady at line 80 column 35
+    driver at line 241 column 1
+    dynare at line 301 column 1
+warning: matrix singular to machine precision
+warning: called from
+    trust_region>dogleg at line 198 column 3
+    trust_region at line 115 column 7
+    dynare_solve at line 253 column 17
+    evaluate_steady_state at line 221 column 20
+    steady_ at line 55 column 28
+    steady at line 80 column 35
+    driver at line 241 column 1
+    dynare at line 301 column 1
+warning: matrix singular to machine precision, rcond = 1.46753e-21
+warning: called from
+    trust_region>dogleg at line 198 column 3
+    trust_region at line 115 column 7
+    dynare_solve at line 253 column 17
+    evaluate_steady_state at line 221 column 20
+    steady_ at line 55 column 28
+    steady at line 80 column 35
+    driver at line 241 column 1
+    dynare at line 301 column 1
+warning: matrix singular to machine precision, rcond = 8.4053e-22
+warning: called from
+    trust_region>dogleg at line 198 column 3
+    trust_region at line 115 column 7
+    dynare_solve at line 253 column 17
+    evaluate_steady_state at line 221 column 20
+    steady_ at line 55 column 28
+    steady at line 80 column 35
+    driver at line 241 column 1
+    dynare at line 301 column 1
+warning: matrix singular to machine precision
+warning: called from
+    trust_region>dogleg at line 198 column 3
+    trust_region at line 115 column 7
+    dynare_solve at line 253 column 17
+    evaluate_steady_state at line 221 column 20
+    steady_ at line 55 column 28
+    steady at line 80 column 35
+    driver at line 241 column 1
+    dynare at line 301 column 1
+warning: matrix singular to machine precision
+warning: called from
+    trust_region>dogleg at line 198 column 3
+    trust_region at line 115 column 7
+    dynare_solve at line 253 column 17
+    evaluate_steady_state at line 221 column 20
+    steady_ at line 55 column 28
+    steady at line 80 column 35
+    driver at line 241 column 1
+    dynare at line 301 column 1
+warning: matrix singular to machine precision, rcond = 7.44826e-22
+warning: called from
+    trust_region>dogleg at line 198 column 3
+    trust_region at line 115 column 7
+    dynare_solve at line 253 column 17
+    evaluate_steady_state at line 221 column 20
+    steady_ at line 55 column 28
+    steady at line 80 column 35
+    driver at line 241 column 1
+    dynare at line 301 column 1
+warning: matrix singular to machine precision, rcond = 7.85054e-22
+warning: called from
+    trust_region>dogleg at line 198 column 3
+    trust_region at line 115 column 7
+    dynare_solve at line 253 column 17
+    evaluate_steady_state at line 221 column 20
+    steady_ at line 55 column 28
+    steady at line 80 column 35
+    driver at line 241 column 1
+    dynare at line 301 column 1
+
+STEADY-STATE RESULTS:
+
+c_ao   		 0.562303
+c_bo   		 0.437697
+c_at   		 0.192762
+c_bt   		 0.150047
+l      		 0.216665
+y_t    		 0.342809
+y_o    		 1
+p_t    		 58.1339
+w      		 22.5351
+pi     		 15.0463
+n_a    		 -816.049
+n_b    		 816.049
+r_star 		 1.0101
+
+MODEL SUMMARY
+
+  Number of variables:         13
+  Number of stochastic shocks: 1
+  Number of state variables:   3
+  Number of jumpers:           4
+  Number of static variables:  6
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables      err_yo
+err_yo       0.010000
+
+POLICY AND TRANSITION FUNCTIONS
+                                c_ao            c_bo            c_at            c_bt               l             y_t             y_o             p_t               w              pi          r_star             n_a             n_b
+Constant                    0.518702        0.481298        0.185477        0.172102        0.230124        0.357580        1.000000       52.315194       19.916158       14.123673        1.010101     -848.486554      848.486554
+y_o(-1)                     3.388113       -2.488113        0.510406       -1.540254       -0.946812       -1.029848        0.900000      494.385423      212.792969       92.793639       -0.215253      181.941891     -181.941891
+n_a(-1)                    -0.080916        0.080916       -0.006228        0.050003        0.022672        0.043775               0      -16.011206       -5.992023       -3.507803        0.059924      -50.395993       50.395993
+n_b(-1)                    -0.082522        0.082522       -0.006505        0.050853        0.023199        0.044348               0      -16.220787       -6.085487       -3.541752        0.059924      -51.395993       51.395993
+err_yo                     -3.764570        2.764570       -0.567118        1.711394        1.052013        1.144276       -1.000000     -549.317137     -236.436633     -103.104043        0.239170     -202.157657      202.157657
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+c_ao              NaN        NaN        NaN
+c_bo              NaN        NaN        NaN
+c_at              NaN        NaN        NaN
+c_bt              NaN        NaN        NaN
+l                 NaN        NaN        NaN
+y_t               NaN        NaN        NaN
+y_o            1.0000     0.2294     0.0526
+p_t               NaN        NaN        NaN
+w                 NaN        NaN        NaN
+pi                NaN        NaN        NaN
+r_star         1.0101     0.0549     0.0030
+n_a               NaN        NaN        NaN
+n_b               NaN        NaN        NaN
+
+
+
+MATRIX OF CORRELATIONS
+Variables       y_o  r_star
+y_o          1.0000 -1.0000
+r_star      -1.0000  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order          1       2       3       4       5
+y_o       0.9000  0.8100  0.7290  0.6561  0.5905
+r_star    0.9000  0.8100  0.7290  0.6561  0.5905
+DYNARE_SOLVE (solve_algo=2|4): number of blocks = 3
+DYNARE_SOLVE (solve_algo=2|4): solving block 2, of size 1
+DYNARE_SOLVE (solve_algo=2|4): solving block 1, of size 12
+MODEL_DIAGNOSTICS:  The Jacobian of the static model is singular
+MODEL_DIAGNOSTICS:  there is 1 colinear relationships between the variables and the equations
+Colinear variables:
+c_ao
+c_bo
+c_at
+c_bt
+l
+y_t
+p_t
+w
+pi
+n_a
+n_b
+Colinear equations
+   3   4
+DYNARE_SOLVE (solve_algo=2|4): number of blocks = 3
+DYNARE_SOLVE (solve_algo=2|4): solving block 2, of size 1
+DYNARE_SOLVE (solve_algo=2|4): solving block 1, of size 12
+MODEL_DIAGNOSTICS:  The singularity seems to be (partly) caused by the presence of a unit root
+MODEL_DIAGNOSTICS:  as the absolute value of one eigenvalue is in the range of +-1e-6 to 1.
+MODEL_DIAGNOSTICS:  If the model is actually supposed to feature unit root behavior, such a warning is expected,
+MODEL_DIAGNOSTICS:  but you should nevertheless check whether there is an additional singularity problem.
+MODEL_DIAGNOSTICS:  The presence of a singularity problem typically indicates that there is one
+MODEL_DIAGNOSTICS:  redundant equation entered in the model block, while another non-redundant equation
+MODEL_DIAGNOSTICS:  is missing. The problem often derives from Walras Law.
+Total computing time : 0h00m02s
+Note: warning(s) encountered in MATLAB/Octave code

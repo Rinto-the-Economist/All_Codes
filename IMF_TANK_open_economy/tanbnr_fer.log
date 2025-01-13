@@ -1,0 +1,130 @@
+Starting preprocessing of the model file ...
+Found 19 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+warning: matrix singular to machine precision, rcond = 5.44289e-17
+warning: called from
+    csolve at line 90 column 16
+    dynare_solve at line 269 column 18
+    evaluate_steady_state at line 221 column 20
+    steady_ at line 55 column 28
+    steady at line 80 column 35
+    driver at line 292 column 1
+    dynare at line 301 column 1
+    PS4 at line 35 column 1
+
+STEADY-STATE RESULTS:
+
+c_aho  		 0.837848
+c_aro  		 0.744107
+c_bo   		 0.237144
+c_aht  		 0.295108
+c_art  		 0.262091
+c_bt   		 0.0835274
+l_h    		 0.149048
+l_r    		 0.244255
+l      		 0.225213
+y_t    		 0.352221
+y_o    		 1
+p_t    		 54.3276
+w      		 29.7379
+pi     		 12.438
+n_a    		 -471.873
+n_b    		 377.499
+r_star 		 1.0101
+pi_r   		 12.438
+pi_h   		 12.438
+
+MODEL SUMMARY
+
+  Number of variables:         19
+  Number of stochastic shocks: 1
+  Number of state variables:   6
+  Number of jumpers:           4
+  Number of static variables:  9
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables      err_yo
+err_yo       0.010000
+
+POLICY AND TRANSITION FUNCTIONS
+                               c_aho           c_aro            c_bo           c_aht           c_art            c_bt             l_h             l_r               l             y_t             y_o             p_t               w              pi             n_a             n_b          r_star
+Constant                    0.837848        0.744107        0.237144        0.295108        0.262091        0.083527        0.149048        0.244255        0.225213        0.352221        1.000000       54.327617       29.737916       12.437977     -471.873328      377.498662        1.010101
+l(-1)                      -0.117929       -0.181657        0.168911        0.131266        0.089486        0.108404        0.138269        0.200925        0.188394        0.206246               0      -79.529972      -24.176336      -16.964895      -23.165330       18.532264        0.048008
+y_t(-1)                     0.107721        0.165933       -0.154290       -0.119903       -0.081740       -0.099021       -0.126301       -0.183533       -0.172086       -0.188394               0       72.645875       22.083638       15.496418       21.160144      -16.928115       -0.043852
+y_o(-1)                     0.876918        0.890715        0.012045        0.287782        0.295001       -0.001726        0.392641        0.235053        0.266571        0.291831        0.900000        9.704864       47.875197        0.563388        1.957108       -1.565686       -0.004652
+p_t(-1)                     0.001397        0.002152       -0.002001       -0.001555       -0.001060       -0.001284       -0.001638       -0.002380       -0.002231       -0.002443               0        0.941968        0.286349        0.200935        0.274374       -0.219500       -0.000569
+n_a(-1)                    -0.017961        0.000771        0.002975       -0.003376        0.002892        0.001883        0.003682       -0.013713       -0.010234        0.003521               0       -1.357868       -0.932611       -0.572580       -3.753441        3.002753        0.008013
+n_b(-1)                    -0.022767        0.000386        0.004245       -0.004324        0.003418        0.002541        0.004347       -0.017067       -0.012785        0.004411               0       -1.700814       -1.187035       -0.711914       -5.925356        4.740285        0.009982
+err_yo                     -0.974353       -0.989683       -0.013383       -0.319758       -0.327779        0.001918       -0.436268       -0.261170       -0.296190       -0.324257       -1.000000      -10.783183      -53.194663       -0.625987       -2.174564        1.739651        0.005169
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+c_aho             NaN        NaN        NaN
+c_aro             NaN        NaN        NaN
+c_bo              NaN        NaN        NaN
+c_aht             NaN        NaN        NaN
+c_art             NaN        NaN        NaN
+c_bt              NaN        NaN        NaN
+l_h               NaN        NaN        NaN
+l_r               NaN        NaN        NaN
+l                 NaN        NaN        NaN
+y_t               NaN        NaN        NaN
+y_o            1.0000     0.2294     0.0526
+p_t               NaN        NaN        NaN
+w                 NaN        NaN        NaN
+pi                NaN        NaN        NaN
+n_a               NaN        NaN        NaN
+n_b               NaN        NaN        NaN
+r_star         1.0101     0.0133     0.0002
+
+
+
+MATRIX OF CORRELATIONS
+Variables       y_o  r_star
+y_o          1.0000 -0.6622
+r_star      -0.6622  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order          1       2       3       4       5
+y_o       0.9000  0.8100  0.7290  0.6561  0.5905
+r_star    0.9963  0.9862  0.9706  0.9508  0.9274
+MODEL_DIAGNOSTICS:  The Jacobian of the static model is singular
+MODEL_DIAGNOSTICS:  there is 1 colinear relationships between the variables and the equations
+Colinear variables:
+c_aho
+c_aro
+c_bo
+c_aht
+c_art
+c_bt
+l_h
+l_r
+l
+y_t
+p_t
+w
+pi
+n_a
+n_b
+pi_r
+pi_h
+Colinear equations
+   4   5
+MODEL_DIAGNOSTICS:  The singularity seems to be (partly) caused by the presence of a unit root
+MODEL_DIAGNOSTICS:  as the absolute value of one eigenvalue is in the range of +-1e-6 to 1.
+MODEL_DIAGNOSTICS:  If the model is actually supposed to feature unit root behavior, such a warning is expected,
+MODEL_DIAGNOSTICS:  but you should nevertheless check whether there is an additional singularity problem.
+MODEL_DIAGNOSTICS:  The presence of a singularity problem typically indicates that there is one
+MODEL_DIAGNOSTICS:  redundant equation entered in the model block, while another non-redundant equation
+MODEL_DIAGNOSTICS:  is missing. The problem often derives from Walras Law.
+Total computing time : 0h00m02s
+Note: warning(s) encountered in MATLAB/Octave code

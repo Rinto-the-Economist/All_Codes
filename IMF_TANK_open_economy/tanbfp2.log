@@ -1,0 +1,138 @@
+Starting preprocessing of the model file ...
+Found 19 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+SOLVE: maxit has been reached
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 3.3845e-05 : 1
+Equation number 2 : 3.9519e-06 : 2
+Equation number 3 : -6.2593e-05 : 3
+Equation number 4 : -0.0055765 : 4
+Equation number 5 : -0.002763 : 5
+Equation number 6 : 2.7917e-05 : 6
+Equation number 7 : 4.4337e-05 : 7
+Equation number 8 : -4.456e-07 : 8
+Equation number 9 : 1.2789e-06 : 9
+Equation number 10 : 1.2098e-05 : 10
+Equation number 11 : -5.7472e-06 : 11
+Equation number 12 : -6.9139e-06 : 12
+Equation number 13 : -0.00046859 : 13
+Equation number 14 : 4.8578e-06 : 14
+Equation number 15 : 3.2832e-05 : 15
+Equation number 16 : 0.00019317 : 16
+Equation number 17 : -0.00013503 : 17
+Equation number 18 : 1.4303e-07 : 18
+Equation number 19 : 0.0018091 : 19
+
+
+error: called from
+    print_info at line 32 column 1
+    steady at line 102 column 5
+    driver at line 291 column 1
+    dynare at line 301 column 1
+error: Impossible to find the steady state (the sum of square residuals of the static equations is 0.0000). Either the model doesn't have a steady state, there are an infinity of steady states, or the guess values are too far from the solution
+>> dynare tanbfp2
+Using 64-bit preprocessor
+Starting Dynare (version 4.6.0).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 19 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+warning: matrix singular to machine precision, rcond = 3.09175e-21
+warning: called from
+    trust_region>dogleg at line 198 column 3
+    trust_region at line 115 column 7
+    dynare_solve at line 253 column 17
+    evaluate_steady_state at line 221 column 20
+    steady_ at line 55 column 28
+    steady at line 80 column 35
+    driver at line 290 column 1
+    dynare at line 301 column 1
+warning: matrix singular to machine precision, rcond = 1.12186e-21
+warning: called from
+    trust_region>dogleg at line 198 column 3
+    trust_region at line 115 column 7
+    dynare_solve at line 253 column 17
+    evaluate_steady_state at line 221 column 20
+    steady_ at line 55 column 28
+    steady at line 80 column 35
+    driver at line 290 column 1
+    dynare at line 301 column 1
+warning: matrix singular to machine precision, rcond = 1.30916e-20
+warning: called from
+    trust_region>dogleg at line 198 column 3
+    trust_region at line 115 column 7
+    dynare_solve at line 253 column 17
+    evaluate_steady_state at line 221 column 20
+    steady_ at line 55 column 28
+    steady at line 80 column 35
+    driver at line 290 column 1
+    dynare at line 301 column 1
+warning: matrix singular to machine precision, rcond = 8.14606e-21
+warning: called from
+    trust_region>dogleg at line 198 column 3
+    trust_region at line 115 column 7
+    dynare_solve at line 253 column 17
+    evaluate_steady_state at line 221 column 20
+    steady_ at line 55 column 28
+    steady at line 80 column 35
+    driver at line 290 column 1
+    dynare at line 301 column 1
+
+STEADY-STATE RESULTS:
+
+c_aho  		 0.391083
+c_aro  		 0.522888
+c_bo   		 0.516654
+c_aht  		 0.120993
+c_art  		 0.16177
+c_bt   		 0.159842
+l_h    		 0.34229
+l_r    		 0.120624
+l      		 0.187124
+y_t    		 0.309379
+y_o    		 1
+p_t    		 66.5956
+w      		 19.2683
+pi     		 16.9977
+n_a    		 -1451.63
+n_b    		 1016.14
+r_star 		 1.0101
+pi_r   		 23.4881
+pi_h   		 1.8533
+error: called from
+    print_info at line 32 column 1
+    stoch_simul at line 103 column 5
+    driver at line 300 column 23
+    dynare at line 301 column 1
+error: One of the eigenvalues is close to 0/0 (the absolute value of numerator and denominator is smaller than 0.0000!
+ If you believe that the model has a unique solution you can try to reduce the value of qz_zero_threshold.
+>> dynare tanbfp
+Using 64-bit preprocessor
+Starting Dynare (version 4.6.0).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 17 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+

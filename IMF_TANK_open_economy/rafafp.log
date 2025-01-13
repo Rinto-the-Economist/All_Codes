@@ -1,0 +1,81 @@
+Starting preprocessing of the model file ...
+Found 10 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+c_ao 		 0.936697
+c_bo 		 0.0633029
+c_at 		 0.323268
+c_bt 		 0.0218468
+l    		 0.21875
+y_t  		 0.345115
+y_o  		 1
+p_t  		 42.8758
+w    		 28.4104
+pi   		 8.5823
+
+MODEL SUMMARY
+
+  Number of variables:         10
+  Number of stochastic shocks: 1
+  Number of state variables:   1
+  Number of jumpers:           0
+  Number of static variables:  9
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables      err_yo
+err_yo       0.010000
+
+POLICY AND TRANSITION FUNCTIONS
+                                c_ao            c_bo            c_at            c_bt               l             y_t             y_o             p_t               w              pi
+Constant                    0.936697        0.063303        0.323268        0.021847        0.218750        0.345115        1.000000       42.875791       28.410378        8.582302
+y_o(-1)                     0.923076       -0.023076        0.027626       -0.027626               0               0        0.900000       96.470530       63.923351       19.310179
+err_yo                     -1.025641        0.025641       -0.030696        0.030696               0               0       -1.000000     -107.189478      -71.025946      -21.455755
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+c_ao           0.9367     0.2353     0.0554
+c_bo           0.0633     0.0059     0.0000
+c_at           0.3233     0.0070     0.0000
+c_bt           0.0218     0.0070     0.0000
+l              0.2187     0.0000     0.0000
+y_t            0.3451     0.0000     0.0000
+y_o            1.0000     0.2294     0.0526
+p_t           42.8758    24.5910   604.7150
+w             28.4104    16.2945   265.5097
+pi             8.5823     4.9223    24.2289
+
+
+
+MATRIX OF CORRELATIONS
+Variables      c_ao    c_bo    c_at    c_bt     y_o     p_t       w      pi
+c_ao         1.0000 -1.0000  1.0000 -1.0000  1.0000  1.0000  1.0000  1.0000
+c_bo        -1.0000  1.0000 -1.0000  1.0000 -1.0000 -1.0000 -1.0000 -1.0000
+c_at         1.0000 -1.0000  1.0000 -1.0000  1.0000  1.0000  1.0000  1.0000
+c_bt        -1.0000  1.0000 -1.0000  1.0000 -1.0000 -1.0000 -1.0000 -1.0000
+y_o          1.0000 -1.0000  1.0000 -1.0000  1.0000  1.0000  1.0000  1.0000
+p_t          1.0000 -1.0000  1.0000 -1.0000  1.0000  1.0000  1.0000  1.0000
+w            1.0000 -1.0000  1.0000 -1.0000  1.0000  1.0000  1.0000  1.0000
+pi           1.0000 -1.0000  1.0000 -1.0000  1.0000  1.0000  1.0000  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order          1       2       3       4       5
+c_ao      0.9000  0.8100  0.7290  0.6561  0.5905
+c_bo      0.9000  0.8100  0.7290  0.6561  0.5905
+c_at      0.9000  0.8100  0.7290  0.6561  0.5905
+c_bt      0.9000  0.8100  0.7290  0.6561  0.5905
+y_o       0.9000  0.8100  0.7290  0.6561  0.5905
+p_t       0.9000  0.8100  0.7290  0.6561  0.5905
+w         0.9000  0.8100  0.7290  0.6561  0.5905
+pi        0.9000  0.8100  0.7290  0.6561  0.5905
+Total computing time : 0h00m02s
